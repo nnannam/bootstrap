@@ -10,43 +10,43 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-lg">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.svg" alt="Wishbone" width="220" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  justify-content-between gap-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-dark py-2 px-3" type="submit">Get template</button>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" alt="Wishbone" width="220" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-dark py-2 px-3" type="submit">Get template</button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main>
-
-
 
     <section class="bg-primary ">
       <div class="container-lg">
@@ -62,7 +62,6 @@
                 data-bs-target="#exampleModal">Validation</button>
             </div>
 
-
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
@@ -75,15 +74,15 @@
                     <form class="d-flex flex-column gap-3">
                       <div>
                         <label for="recipient-name" class="col-form-label">Name:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <input type="text" placeholder="Type your name" class="form-control" id="recipient-name">
                       </div>
                       <div>
                         <label for="recipient-email" class="col-form-label">Email:</label>
-                        <input type="email" class="form-control" id="recipient-email">
+                        <input type="email" placeholder="Type your email" class="form-control" id="recipient-email">
                       </div>
                       <div>
                         <label for="message-text" class="col-form-label">Leave your message here:</label>
-                        <textarea class="form-control mb-3" id="message-text"></textarea>
+                        <textarea class="form-control mb-3" placeholder="Type your message" id="message-text"></textarea>
                       </div>
                     </form>
                   </div>
@@ -94,10 +93,8 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div class="col-12 col-md-6 p-0 main-img" style="background-image: url('img/main.svg');">
-
           </div>
         </div>
       </div>
@@ -124,7 +121,7 @@
               erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
               posuere.</p>
             <button type="button" class="btn btn-outline-dark" title="i'm custom tooltip!!" data-bs-toggle="tooltip"
-              data-bs-placement="right" data-bs-title="Tooltip on right" data-bs-custom class="custom-tooltip-class">
+              data-bs-placement="right" data-bs-title="i'm custom tooltip!!" data-bs-custom class="custom-tooltip-class">
               Tooltip on right
             </button>
           </div>
@@ -257,30 +254,28 @@
   </main>
 
   <footer>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.svg" alt="Wishbone" width="220" height="40">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            Navbar text with an inline element
-          </span>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-lg">
+        <div class="d-flex flex-column flex-sm-row align-items-end w-100 justify-content-between">
+          <div class="d-flex flex-column">
+            <a class="navbar-brand" href="#">
+              <img src="/img/logo.svg"  width="220" height="40">
+            </a>
+            <span class="navbar-text">
+              Powered by Webflow. All rights reserved Wishbone+Partners, Inc. Licening.
+            </span>
+          </div>
+          <div class="d-flex">
+            <a class="navbar-brand" href="#">
+              <img src="/img/twi.svg"  width="30" height="30">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="/img/inst.svg"  width="30" height="30">
+            </a>
+            <a class="navbar-brand" href="#">
+              <img src="/img/fb.svg"  width="30" height="30">
+            </a>
+          </div>
         </div>
       </div>
     </nav>
