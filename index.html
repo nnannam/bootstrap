@@ -12,39 +12,49 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
+
+    
+
+    <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
       <div class="container-lg">
         <a class="navbar-brand" href="#">
           <img src="img/logo.svg" alt="Wishbone" width="220" height="40">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between gap-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-dark py-2 px-3" type="submit">Get template</button>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-dark py-2 px-3" type="submit">Get template</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
+    
+
   </header>
 
   <main>
@@ -283,7 +293,7 @@
   </footer>
 
 
-  <script src="./src/main.js"></script>
+  
 </body>
 
 </html>
